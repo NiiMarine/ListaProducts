@@ -25,8 +25,7 @@ const listaProdutos=products.map(
   return (
    
     <div className="App">
-      <>
-   
+      <h2>{listaProdutos} <h2/>
     </>
   
      <Sale />
