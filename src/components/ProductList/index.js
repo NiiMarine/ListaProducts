@@ -1,34 +1,26 @@
-import React, { useState } from 'react';
-
+import React, { useState } from "react";
+//never used
 
 const ProductList = (props) => {
+  //fix code
+  // console.log(props.products) for to observer the props;
 
-      
-  { props.products.map((products) => <div> 
-{products.name}{products.price}{products.discountPercentage}
- </div>  
-)}
-
- 
-
- 
-
-  
-    
-    return (
-    <div className="list">
-     <>
-  
-  <p>{ProductList}</p>
-    
-   
-  </>
-    </div> 
-    
-  )
-  
-  
-   
-  
-  }
-export default ProductList
+  return (
+    <>
+      <div className="list">
+        <div>
+          {/* Props accepted is products, not listaProdutos, and map mas be in return component */}
+          {props.products.map((product, index) => (
+            <div key={index}>
+              {product.name}
+              {product.price}
+              {product.discountPercentage}
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
+    //all elements must be inside a tag
+  );
+};
+export default ProductList;

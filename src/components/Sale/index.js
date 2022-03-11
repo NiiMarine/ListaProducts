@@ -1,13 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+//never used
 
 const Sale = (props) => {
-  return (
-    <div className="red-text">
-     {props.children}%
-       
-    </div> 
-   
-  )
-}
+  //fix code
+  return <div className="red-text">{props.children}%</div>;
+};
 
-export default Sale
+export default Sale;
