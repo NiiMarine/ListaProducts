@@ -1,34 +1,38 @@
-import React, { useState } from 'react';
 
+import React from 'react' ;
+import Sale from '../Sale';
+import "./index.css"
 
 const ProductList = (props) => {
-
-      
-  { props.products.map((products) => <div> 
-{products.name}{products.price}{products.discountPercentage}
- </div>  
-)}
-
- 
-
- 
-
+  //fix code
+  // console.log(props.products) for to observer the props;
   
+
+  return (
     
-    return (
-    <div className="list">
-     <>
-  
-  <p>{ProductList}</p>
+      <div className="list">
+
+         {props.products.map((product, index) => (
+            <div key={index} >
+
+         <div className='name'>{product.name} </div>
+             
+             <div> R${product.price} </div>
+              { product.discountPercentage &&
+       <Sale> {product.discountPercentage } </Sale>}
+            
+              
+              
+           
+             
+            </div>
+          ))}
+        
+      </div>
     
-   
-  </>
-    </div> 
     
-  )
-  
-  
-   
-  
-  }
-export default ProductList
+  );
+};
+
+
+export default ProductList;

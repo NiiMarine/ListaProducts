@@ -1,13 +1,20 @@
-import React, { useState } from 'react';
+import React from "react";
+
 
 const Sale = (props) => {
-  return (
-    <div className="red-text">
-     {props.children}%
-       
-    </div> 
-   
-  )
-}
 
-export default Sale
+  return <div className='discont'> 
+    {props.children}
+    %
+    
+     </div>;
+   
+    
+   
+    
+};
+ 
+  
+
+
+export default Sale;
