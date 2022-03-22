@@ -1,9 +1,20 @@
-import React, { useState } from "react";
-//never used
+import React from "react";
+
 
 const Sale = (props) => {
-  //fix code
-  return <div className="red-text">{props.children}%</div>;
+
+  return <div className='discont'> 
+    {props.children}
+    %
+    
+     </div>;
+   
+    
+   
+    
 };
+ 
+  
+
 
 export default Sale;
